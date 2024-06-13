@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
+    'prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
@@ -38,4 +39,4 @@ module.exports = {
       },
     ],
   },
-};
+}
