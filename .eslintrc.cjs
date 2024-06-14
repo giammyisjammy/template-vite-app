@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
+    'plugin:sonarjs/recommended-legacy',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -18,7 +19,7 @@ module.exports = {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react-refresh', 'import'],
+  plugins: ['react-refresh', 'import', 'eslint-plugin-sonarjs'],
   settings: {
     react: {
       version: 'detect',
