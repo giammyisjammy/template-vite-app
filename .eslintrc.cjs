@@ -19,6 +19,11 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   plugins: ['react-refresh', 'import'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -34,8 +39,20 @@ module.exports = {
           ['parent', 'sibling', 'index'],
           'type',
         ],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'internal',
+            position: 'after',
+          },
+        ],
         'newlines-between': 'always',
         pathGroupsExcludedImportTypes: ['builtin', 'object'],
+        // alphabetize: {
+        //   order: 'asc',
+        //   orderImportKind: 'asc',
+        //   caseInsensitive: true,
+        // },
       },
     ],
   },
