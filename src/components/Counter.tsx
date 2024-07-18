@@ -4,15 +4,6 @@ export interface CounterProps {
   onCount?: (value: number) => void
 }
 
-// This should trigger SonarJs plugin
-
-const doOneMoreThing = () => undefined
-if (count == 0) {
-  doOneMoreThing()
-} else {
-  doOneMoreThing()
-}
-
 export const Counter = ({ onCount }: CounterProps) => {
   const [count, setCount] = useState(0)
 
