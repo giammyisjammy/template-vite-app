@@ -1,4 +1,5 @@
 // linter should tidy up imports
+import { createLazyFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 
 import { Alert } from '@/components/Alert'
@@ -6,9 +7,13 @@ import { Counter } from '@/components/Counter'
 
 import './App.css'
 
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
 
 import viteLogo from '/vite.svg'
+
+export const Route = createLazyFileRoute('/')({
+  component: App,
+})
 
 function App() {
   const [appCounter, setAppCounter] = useState(0)
