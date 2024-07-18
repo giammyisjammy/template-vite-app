@@ -1,7 +1,7 @@
 // linter should tidy up imports
 import { useState } from 'react'
-import { Alert } from '@/components/Alert'
 
+import { Alert } from '@/components/Alert'
 import { Counter } from '@/components/Counter'
 
 import './App.css'
@@ -16,10 +16,10 @@ function App() {
     <>
       <div>
         {/* Missing rel='noreferrer' attribute should raise a linter error */}
-        <a href='https://vitejs.dev' target='_blank'>
+        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
         </a>
-        <a href='https://react.dev' target='_blank'>
+        <a href='https://react.dev' target='_blank' rel='noreferrer'>
           <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
       </div>

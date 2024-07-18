@@ -1,6 +1,6 @@
 const someConfig = {
   a: 42,
-  b: 'some text' // <- linter should not complain but prettier should fix this
+  b: 'some text', // <- linter should not complain but prettier should fix this
 }
 
 // const someUnusedVar = 42
