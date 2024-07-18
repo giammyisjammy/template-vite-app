@@ -41,5 +41,9 @@
       "npm run lint:format",
       "npm run lint:fix"
     ]
+  },
+  "volta": {
+    "node": "20.15.1",
+    "npm": "10.8.2"
   }
 }
