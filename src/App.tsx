@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { Counter } from '@/components/Counter'
+import { Counter } from '@/components'
 
 import './App.css'
 
@@ -24,14 +24,10 @@ function App() {
           <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
       </div>
-      {/* <h1>Vite + React</h1> */}
       <h1>{t('title')}</h1>
       <Counter onCount={(value) => setAppCounter(value * 2)} />
-      <p>App counter is {appCounter}</p>
-
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <p>{t('counter', { appCounter })} </p>
+      <p className='read-the-docs'>{t('readTheDocs')}</p>
     </>
   )
 }
