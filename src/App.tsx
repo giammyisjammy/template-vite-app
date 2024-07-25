@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { Alert } from '@/components/Alert'
 import { Counter } from '@/components/Counter'
 
 import './App.css'
@@ -29,7 +28,7 @@ function App() {
       <h1>{t('title')}</h1>
       <Counter onCount={(value) => setAppCounter(value * 2)} />
       <p>App counter is {appCounter}</p>
-      <Alert />
+
       <p className='read-the-docs'>
         Click on the Vite and React logos to learn more
       </p>
